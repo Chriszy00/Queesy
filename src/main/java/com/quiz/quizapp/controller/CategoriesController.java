@@ -12,6 +12,9 @@ import javafx.scene.paint.Color;
 import javafx.stage.Stage;
 import javafx.stage.StageStyle;
 
+import java.io.InputStream;
+import java.net.URL;
+
 public class CategoriesController {
 
     @FXML
@@ -87,4 +90,6 @@ public class CategoriesController {
 
         MusicController.playMusic(musicPath, -15.0f, true); // Adjust volume as needed
     }
+
+
 }
