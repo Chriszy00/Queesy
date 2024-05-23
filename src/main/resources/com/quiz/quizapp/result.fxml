@@ -55,37 +55,37 @@
                     </font>
                 </Label>
 
-                <Pane layoutX="23.0" layoutY="168.0" opacity="0.04" prefHeight="109.0" prefWidth="104.0" style="-fx-background-color: GREEN; -fx-background-radius: 10px;" />
-                <Pane layoutX="135.0" layoutY="168.0" opacity="0.04" prefHeight="109.0" prefWidth="104.0" style="-fx-background-color: red; -fx-background-radius: 10px;" />
-                <Pane layoutX="245.0" layoutY="168.0" opacity="0.04" prefHeight="109.0" prefWidth="104.0" style="-fx-background-color: #a500ff; -fx-border-radius: 15px; -fx-background-radius: 10px;" />
+                <Pane layoutX="22.0" layoutY="184.0" opacity="0.04" prefHeight="109.0" prefWidth="104.0" style="-fx-background-color: GREEN; -fx-background-radius: 10px;" />
+                <Pane layoutX="134.0" layoutY="184.0" opacity="0.04" prefHeight="109.0" prefWidth="104.0" style="-fx-background-color: red; -fx-background-radius: 10px;" />
+                <Pane layoutX="244.0" layoutY="184.0" opacity="0.04" prefHeight="109.0" prefWidth="104.0" style="-fx-background-color: #a500ff; -fx-border-radius: 15px; -fx-background-radius: 10px;" />
 
                 <!-- Correct Progress-->
-                <Label fx:id="correctProgress" layoutX="45.0" layoutY="181.0" text="90%" textFill="GREEN">
+                <Label fx:id="correctProgress" layoutX="44.0" layoutY="197.0" text="90%" textFill="GREEN">
                     <font>
                         <Font name="System Bold" size="30.0" />
                     </font>
                 </Label>
                 <!-- Wrong Progress-->
-                <Label fx:id="wrongProgress" alignment="CENTER" contentDisplay="CENTER" layoutX="157.0" layoutY="183.0" text="10%" textFill="RED">
+                <Label fx:id="wrongProgress" alignment="CENTER" contentDisplay="CENTER" layoutX="156.0" layoutY="199.0" text="10%" textFill="RED">
                     <font>
                         <Font name="System Bold" size="30.0" />
                     </font>
                 </Label>
 
                 <!-- Marks -->
-                <Label fx:id="marks" layoutX="264.0" layoutY="181.0" text="9/10" textFill="#a500ff">
+                <Label fx:id="marks" layoutX="263.0" layoutY="197.0" text="9/10" textFill="#a500ff">
                     <font>
                         <Font name="System Bold" size="30.0" />
                     </font>
                 </Label>
                 <!--                Wrong text-->
-                <Label fx:id="wrongtext" layoutX="140.0" layoutY="234.0" text="Incorrect Answers : 1" textAlignment="CENTER" textFill="RED">
+                <Label fx:id="wrongtext" layoutX="139.0" layoutY="250.0" text="Incorrect Answers : 1" textAlignment="CENTER" textFill="RED">
                     <font>
                         <Font size="13.0" />
                     </font>
                 </Label>
                 <!--                Correct Text-->
-                <Label fx:id="correcttext" layoutX="30.0" layoutY="236.0" text="Correct Answers : 9" textAlignment="CENTER" textFill="GREEN">
+                <Label fx:id="correcttext" layoutX="29.0" layoutY="252.0" text="Correct Answers : 9" textAlignment="CENTER" textFill="GREEN">
                     <font>
                         <Font size="13.0" />
                     </font>
@@ -103,7 +103,7 @@
 
 
                 <!--                Review Quiz Button-->
-                <Button alignment="CENTER" layoutX="23.0" layoutY="308.0" mnemonicParsing="false" onAction="#handleReviewQuiz" prefHeight="54.0" prefWidth="331.0" style="-fx-label-padding: 10px 20px; -fx-background-color: #504099; -fx-border-radius: 200px; -fx-background-radius: 15px;" text="REVIEW QUIZ" textFill="#fcfcfc">
+                <Button alignment="CENTER" layoutX="22.0" layoutY="368.0" mnemonicParsing="false" onAction="#handleReviewQuiz" prefHeight="54.0" prefWidth="331.0" style="-fx-label-padding: 10px 20px; -fx-background-color: #504099; -fx-border-radius: 200px; -fx-background-radius: 15px;" text="REVIEW QUIZ" textFill="#fcfcfc">
                     <font>
                         <Font name="Calibri Bold" size="18.0" />
                     </font>
@@ -113,7 +113,7 @@
                 </Button>
 
                 <!--                Close Game Button-->
-                <Button alignment="CENTER" layoutX="23.0" layoutY="380.0" mnemonicParsing="false" onAction="#handleCloseGame" prefHeight="54.0" prefWidth="331.0" style="-fx-label-padding: 10px 20px; -fx-background-color: DDDDDD; -fx-border-radius: 200px; -fx-background-radius: 15px;" text="CLOSE GAME" textFill="#fcfcfc">
+                <Button alignment="CENTER" layoutX="22.0" layoutY="440.0" mnemonicParsing="false" onAction="#handleCloseGame" prefHeight="54.0" prefWidth="331.0" style="-fx-label-padding: 10px 20px; -fx-background-color: DDDDDD; -fx-border-radius: 200px; -fx-background-radius: 15px;" text="CLOSE GAME" textFill="#fcfcfc">
                     <font>
                         <Font name="Calibri Bold" size="18.0" />
                     </font>
@@ -124,7 +124,7 @@
 
 
                 <!--                Marks Scored-->
-                <Label fx:id="markstext" layoutX="253.0" layoutY="232.0" prefHeight="25.0" prefWidth="98.0" text="9 Marks Scored" textFill="#a500ff">
+                <Label fx:id="markstext" layoutX="252.0" layoutY="248.0" prefHeight="25.0" prefWidth="98.0" text="9 Marks Scored" textFill="#a500ff">
                     <font>
                         <Font size="13.0" />
                     </font>

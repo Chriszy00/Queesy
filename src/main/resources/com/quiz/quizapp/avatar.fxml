@@ -58,7 +58,7 @@
                 <ImageView fx:id="avatar4" fitHeight="150.0" fitWidth="163.0" layoutX="189.0" layoutY="165.0" pickOnBounds="true"
                            preserveRatio="true">
                     <image>
-                        <Image url="@../../../images/43.png"/>
+                        <Image url="@../../../images/50.png"/>
                     </image>
                 </ImageView>
 
