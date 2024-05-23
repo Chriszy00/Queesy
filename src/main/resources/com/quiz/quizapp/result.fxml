@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--Need to fix the design; go to scence builder-->
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="430.0" style="-fx-background-color: #F6F5F2; -fx-background-radius: 32px; -fx-border-radius: 32px;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.quiz.quizapp.controller.ResultController">
+    <children>
+        <ImageView fitHeight="947.0" fitWidth="430.0" layoutY="-147.0" pickOnBounds="true">
+            <image>
+                <Image url="@../../../images/bg1.png" />
+            </image>
+        </ImageView>
+        <ImageView fitHeight="947.0" fitWidth="430.0" layoutY="-196.0" pickOnBounds="true" rotate="180.0">
+            <image>
+                <Image url="@../../../images/bg1.png" />
+            </image>
+        </ImageView>
+        <Pane layoutX="42.0" layoutY="108.0" prefHeight="79.0" prefWidth="347.0" style="-fx-background-color: #504099; -fx-border-radius: 20px; -fx-background-radius: 15px;">
+            <children>
+<!--                Category Label-->
+                <Label fx:id="categoryLabel" layoutX="14.0" layoutY="11.0" text="Quiz Category" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font></Label>
+                <Label fx:id="timeTaken" layoutX="253.0" layoutY="11.0" text="00:00:00" textAlignment="CENTER" textFill="WHITE">
+                    <font>
+                        <Font name="Segoe UI Bold" size="20.0" />
+                    </font>
+                </Label>
+            </children>
+        </Pane>
+        <Pane layoutX="30.0" layoutY="175.0" prefHeight="523.0" prefWidth="372.0" style="-fx-background-color: #ffffff; -fx-border-radius: 20px; -fx-background-radius: 20px;">
+            <children>
+                <ImageView fitHeight="203.0" fitWidth="372.0" pickOnBounds="true" preserveRatio="true" style="-fx-border-radius: 60px;">
+                    <image>
+                        <Image url="@../../../images/confe1.png" />
+                    </image>
+                </ImageView>
+
+<!--                Avatar Image-->
+                <ImageView fx:id="avatarImageViewResults" fitHeight="131.0" fitWidth="120.0" layoutX="126.0" layoutY="-26.0" pickOnBounds="true" preserveRatio="true" />
+
+                <!-- remark -->
+                <Label fx:id="remark" alignment="CENTER" contentDisplay="CENTER" layoutX="72.0" layoutY="121.0" maxWidth="-Infinity" prefHeight="30.0" prefWidth="228.0" text="Congratulations, Jeanne!" textFill="#ffb854" wrapText="true">
+                    <font>
+                        <Font size="20.0" />
+                    </font>
+                </Label>
+
+                <Pane layoutX="23.0" layoutY="168.0" opacity="0.04" prefHeight="109.0" prefWidth="104.0" style="-fx-background-color: GREEN; -fx-background-radius: 10px;" />
+                <Pane layoutX="135.0" layoutY="168.0" opacity="0.04" prefHeight="109.0" prefWidth="104.0" style="-fx-background-color: red; -fx-background-radius: 10px;" />
+                <Pane layoutX="245.0" layoutY="168.0" opacity="0.04" prefHeight="109.0" prefWidth="104.0" style="-fx-background-color: #a500ff; -fx-border-radius: 15px; -fx-background-radius: 10px;" />
+
+                <!-- Correct Progress-->
+                <Label fx:id="correctProgress" layoutX="45.0" layoutY="181.0" text="90%" textFill="GREEN">
+                    <font>
+                        <Font name="System Bold" size="30.0" />
+                    </font>
+                </Label>
+                <!-- Wrong Progress-->
+                <Label fx:id="wrongProgress" alignment="CENTER" contentDisplay="CENTER" layoutX="157.0" layoutY="183.0" text="10%" textFill="RED">
+                    <font>
+                        <Font name="System Bold" size="30.0" />
+                    </font>
+                </Label>
+
+                <!-- Marks -->
+                <Label fx:id="marks" layoutX="264.0" layoutY="181.0" text="9/10" textFill="#a500ff">
+                    <font>
+                        <Font name="System Bold" size="30.0" />
+                    </font>
+                </Label>
+                <!--                Wrong text-->
+                <Label fx:id="wrongtext" layoutX="140.0" layoutY="234.0" text="Incorrect Answers : 1" textAlignment="CENTER" textFill="RED">
+                    <font>
+                        <Font size="13.0" />
+                    </font>
+                </Label>
+                <!--                Correct Text-->
+                <Label fx:id="correcttext" layoutX="30.0" layoutY="236.0" text="Correct Answers : 9" textAlignment="CENTER" textFill="GREEN">
+                    <font>
+                        <Font size="13.0" />
+                    </font>
+                </Label>
+
+                <!--                Take Another Quiz Button-->
+<!--                <Button fx:id="takeAnotherQuizButton" alignment="CENTER" layoutX="21.0" layoutY="315.0" mnemonicParsing="false" onAction="#handleTakeAnotherQuiz" prefHeight="54.0" prefWidth="331.0" style="-fx-label-padding: 10px 20px; -fx-background-color: #504099; -fx-border-radius: 15px; -fx-background-radius: 15px;" text="TAKE ANOTHER QUIZ" textFill="#fcfcfc">-->
+<!--                    <font>-->
+<!--                        <Font name="Calibri Bold" size="18.0" />-->
+<!--                    </font>-->
+<!--                    <opaqueInsets>-->
+<!--                        <Insets />-->
+<!--                    </opaqueInsets>-->
+<!--                </Button>-->
+
+
+                <!--                Review Quiz Button-->
+                <Button alignment="CENTER" layoutX="23.0" layoutY="308.0" mnemonicParsing="false" onAction="#handleReviewQuiz" prefHeight="54.0" prefWidth="331.0" style="-fx-label-padding: 10px 20px; -fx-background-color: #504099; -fx-border-radius: 200px; -fx-background-radius: 15px;" text="REVIEW QUIZ" textFill="#fcfcfc">
+                    <font>
+                        <Font name="Calibri Bold" size="18.0" />
+                    </font>
+                    <opaqueInsets>
+                        <Insets />
+                    </opaqueInsets>
+                </Button>
+
+                <!--                Close Game Button-->
+                <Button alignment="CENTER" layoutX="23.0" layoutY="380.0" mnemonicParsing="false" onAction="#handleCloseGame" prefHeight="54.0" prefWidth="331.0" style="-fx-label-padding: 10px 20px; -fx-background-color: DDDDDD; -fx-border-radius: 200px; -fx-background-radius: 15px;" text="CLOSE GAME" textFill="#fcfcfc">
+                    <font>
+                        <Font name="Calibri Bold" size="18.0" />
+                    </font>
+                    <opaqueInsets>
+                        <Insets />
+                    </opaqueInsets>
+                </Button>
+
+
+                <!--                Marks Scored-->
+                <Label fx:id="markstext" layoutX="253.0" layoutY="232.0" prefHeight="25.0" prefWidth="98.0" text="9 Marks Scored" textFill="#a500ff">
+                    <font>
+                        <Font size="13.0" />
+                    </font>
+                </Label>
+            </children>
+        </Pane>
+    </children>
+</AnchorPane>

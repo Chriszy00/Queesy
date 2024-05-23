@@ -1,0 +1,8 @@
+/* styles.css */
+
+/* Style for the AnchorPane */
+.root {
+    -fx-background-color: #F6F5F2;
+    -fx-background-radius: 32px;
+    -fx-border-radius: 32px;
+}

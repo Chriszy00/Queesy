@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="742.0" prefWidth="353.0"
+            style="-fx-background-color: white; -fx-background-radius: 32px; -fx-border-radius: 32px;"
+            xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="com.quiz.quizapp.controller.AvatarController">
+    <children>
+
+        <ImageView fitHeight="1006.0" fitWidth="395.0" layoutY="-264.0" pickOnBounds="true">
+            <image>
+                <Image url="@../../../images/bg1.png"/>
+            </image>
+        </ImageView>
+        <ImageView fitHeight="54.0" fitWidth="127.0" layoutX="150.0" layoutY="45.0" pickOnBounds="true"
+                   preserveRatio="true">
+            <image>
+                <Image url="@../../../images/logo1.png"/>
+            </image>
+        </ImageView>
+        <Label layoutX="95.0" layoutY="153.0" text="Pick your avatar, Quiz Hero!">
+            <font>
+                <Font name="Oswald Medium" size="19.0"/>
+            </font>
+        </Label>
+        <Pane layoutX="27.0" layoutY="210.0" prefHeight="510.0" prefWidth="341.0">
+
+            <children>
+                <!--        CRS: 05/21/2024 | After the image will be clicked it will redirect to the quiz page-->
+
+<!--                Image 1-->
+                <ImageView fx:id="avatar1" fitHeight="150.0" fitWidth="163.0" pickOnBounds="true" preserveRatio="true">
+                    <!--                  <Image url="@../../../../../../Add%20a%20little%20bit%20of%20body%20text%20(4)/45.png" />-->
+                    <Image url="@../../../images/43.png"/>
+                </ImageView>
+
+<!--                Image 2-->
+                <ImageView fx:id="avatar2" fitHeight="150.0" fitWidth="163.0" layoutX="189.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@../../../images/46.png"/>
+                    </image>
+                </ImageView>
+
+<!--                Image 3-->
+                <ImageView fx:id="avatar3" fitHeight="150.0" fitWidth="163.0" layoutY="165.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@../../../images/47.png"/>
+                    </image>
+                </ImageView>
+
+<!--                Image 4-->
+                <ImageView fx:id="avatar4" fitHeight="150.0" fitWidth="163.0" layoutX="189.0" layoutY="165.0" pickOnBounds="true"
+                           preserveRatio="true">
+                    <image>
+                        <Image url="@../../../images/43.png"/>
+                    </image>
+                </ImageView>
+
+<!--                Image 5-->
+                <ImageView fx:id="avatar5" fitHeight="150.0" fitWidth="163.0" layoutY="330.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@../../../images/48.png"/>
+                    </image>
+                </ImageView>
+
+<!--                Image 6-->
+                <ImageView fx:id="avatar6" fitHeight="150.0" fitWidth="163.0" layoutX="189.0" layoutY="330.0" pickOnBounds="true"
+                           preserveRatio="true">
+                    <image>
+                        <Image url="@../../../images/49.png"/>
+                    </image>
+                </ImageView>
+
+            </children>
+        </Pane>
+    </children>
+</AnchorPane>
+

@@ -1,0 +1,20 @@
+/* styles.css */
+.list-cell {
+    -fx-padding: 10px;
+    -fx-background-color: #f0f0f0;
+    -fx-border-color: #dcdcdc;
+    -fx-border-width: 1px;
+    -fx-font-size: 14px;
+}
+
+.list-cell:empty {
+    -fx-background-color: transparent;
+}
+
+.button {
+    -fx-background-color: #504099;
+    -fx-text-fill: white;
+    -fx-font-size: 14px;
+    -fx-padding: 10px 20px;
+    -fx-background-radius: 10px;
+}

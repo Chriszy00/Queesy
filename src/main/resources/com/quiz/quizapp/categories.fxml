@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane xmlns:fx="http://javafx.com/fxml/1" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0"
+            prefWidth="430.0"
+
+            xmlns="http://javafx.com/javafx/21"
+            stylesheets="@../../../css/categories.css"
+            fx:controller="com.quiz.quizapp.controller.CategoriesController">
+    <children>
+        <Label fx:id="userNameLabel" layoutX="30.0" layoutY="91.0" text="Let's play, [UserName]" textFill="#974ec3">
+            <font>
+                <Font name="System Bold" size="22.0"/>
+            </font>
+        </Label>
+<!--        <Label  layoutX="180.0" layoutY="91.0" text="Welcome back, [UserName]!" textFill="#974ec3">-->
+<!--            <font>-->
+<!--                <Font name="System Bold" size="14.0"/>-->
+<!--            </font>-->
+<!--        </Label>-->
+        <Label layoutX="30.0" layoutY="123.0" text="Be the first to take the leap!" textFill="#868686">
+            <font>
+                <Font size="14.0"/>
+            </font>
+        </Label>
+
+        <!--        CRS: 05/21/2024 | Added an ID on the Pane to be able to access it in the controller -->
+        <!--        GEOGRAPHY-->
+        <Pane fx:id="geoPane" layoutX="27.0" layoutY="187.0" prefHeight="143.0" prefWidth="375.0"
+              style="-fx-background-color: #79AC78; -fx-background-radius: 20px;">
+            <children>
+                <Label layoutX="24.0" layoutY="90.0" text="Geography" textFill="#f4f4f4">
+                    <font>
+                        <Font name="System Bold" size="24.0"/>
+                    </font>
+                </Label>
+                <ImageView fitHeight="130.0" fitWidth="186.0" layoutX="148.0" layoutY="-22.0" pickOnBounds="true"
+                           preserveRatio="true">
+                    <image>
+                        <Image url="@../../../images/38.png"/>
+                    </image>
+                </ImageView>
+                <ImageView fitHeight="76.0" fitWidth="84.0" layoutX="290.0" layoutY="25.0" pickOnBounds="true"
+                           preserveRatio="true">
+                    <image>
+                        <Image url="@../../../images/stone1.png"/>
+                    </image>
+                </ImageView>
+                <ImageView fitHeight="171.0" fitWidth="179.0" layoutX="204.0" layoutY="-61.0" pickOnBounds="true"
+                           preserveRatio="true">
+                    <image>
+                        <Image url="@../../../images/39.png"/>
+                    </image>
+                </ImageView>
+                <Label layoutX="24.0" layoutY="72.0" text="Level 4" textFill="WHITE">
+                    <font>
+                        <Font size="14.0"/>
+                    </font>
+                </Label>
+            </children>
+        </Pane>
+
+        <!--        Science-->
+        <Pane fx:id="sciPane" layoutX="27.0" layoutY="377.0" prefHeight="143.0" prefWidth="375.0"
+              style="-fx-background-color: #1679AB; -fx-background-radius: 20px;">
+            <children>
+                <Label layoutX="24.0" layoutY="90.0" text="Science" textFill="#f4f4f4">
+                    <font>
+                        <Font name="System Bold" size="24.0"/>
+                    </font>
+                </Label>
+                <Label layoutX="24.0" layoutY="72.0" text="Level 2" textFill="WHITE">
+                    <font>
+                        <Font size="14.0"/>
+                    </font>
+                </Label>
+                <ImageView fitHeight="65.0" fitWidth="84.0" layoutX="152.0" layoutY="-27.0" pickOnBounds="true"
+                           preserveRatio="true">
+                    <image>
+                        <Image url="@../../../images/36.png"/>
+                    </image>
+                </ImageView>
+                <ImageView fitHeight="171.0" fitWidth="209.0" layoutX="204.0" layoutY="-53.0" pickOnBounds="true"
+                           preserveRatio="true">
+                    <image>
+                        <Image url="@../../../images/40.png"/>
+                    </image>
+                </ImageView>
+                <ImageView fitHeight="79.0" fitWidth="56.0" layoutX="168.0" layoutY="32.0" pickOnBounds="true"
+                           preserveRatio="true">
+                    <image>
+                        <Image url="@../../../images/37.png"/>
+                    </image>
+                </ImageView>
+            </children>
+        </Pane>
+
+        <!--        Math-->
+        <Pane fx:id="mathPane" layoutX="27.0" layoutY="567.0" prefHeight="143.0" prefWidth="375.0"
+              style="-fx-background-color: #F16767; -fx-background-radius: 20px;">
+            <children>
+                <Label layoutX="24.0" layoutY="90.0" text="Math" textFill="#f4f4f4">
+                    <font>
+                        <Font name="System Bold" size="24.0"/>
+                    </font>
+                </Label>
+                <Label layoutX="24.0" layoutY="72.0" text="Level 1" textFill="WHITE">
+                    <font>
+                        <Font size="14.0"/>
+                    </font>
+                </Label>
+                <ImageView fitHeight="65.0" fitWidth="84.0" layoutX="146.0" layoutY="-17.0" pickOnBounds="true"
+                           preserveRatio="true">
+                    <image>
+                        <Image url="@../../../images/33.png"/>
+                    </image>
+                </ImageView>
+                <ImageView fitHeight="201.0" fitWidth="213.0" layoutX="188.0" layoutY="-76.0" pickOnBounds="true"
+                           preserveRatio="true">
+                    <image>
+                        <Image url="@../../../images/34.png"/>
+                    </image>
+                </ImageView>
+                <ImageView fitHeight="79.0" fitWidth="56.0" layoutX="161.0" layoutY="38.0" pickOnBounds="true"
+                           preserveRatio="true">
+                    <image>
+                        <Image url="@../../../images/calcu1.png"/>
+                    </image>
+                </ImageView>
+            </children>
+        </Pane>
+    </children>
+</AnchorPane>
