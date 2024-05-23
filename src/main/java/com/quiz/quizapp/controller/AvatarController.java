@@ -28,7 +28,7 @@ public class AvatarController {
         avatar1.setOnMouseClicked(event -> handleAvatarSelection("/images/43.png"));
         avatar2.setOnMouseClicked(event -> handleAvatarSelection("/images/46.png"));
         avatar3.setOnMouseClicked(event -> handleAvatarSelection("/images/47.png"));
-        avatar4.setOnMouseClicked(event -> handleAvatarSelection("/images/43.png"));
+        avatar4.setOnMouseClicked(event -> handleAvatarSelection("/images/50.png"));
         avatar5.setOnMouseClicked(event -> handleAvatarSelection("/images/48.png"));
         avatar6.setOnMouseClicked(event -> handleAvatarSelection("/images/49.png"));
     }
