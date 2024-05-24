@@ -72,13 +72,13 @@ public class CategoriesController {
 
         switch (category) {
             case "math":
-                musicPath = "src/main/resources/music/math_music.wav";
+                musicPath = "https://res.cloudinary.com/drhiswbtx/video/upload/v1716456872/Music/math_music_p77uuo.wav";
                 break;
             case "science":
-                musicPath = "src/main/resources/music/science_music.wav";
+                musicPath = "https://res.cloudinary.com/drhiswbtx/video/upload/v1716456872/Music/math_music_p77uuo.wav";
                 break;
             case "geography":
-                musicPath = "src/main/resources/music/geography_music.wav";
+                musicPath = "https://res.cloudinary.com/drhiswbtx/video/upload/v1716456869/Music/geography_music_ze86sk.wav";
                 break;
             default:
                 System.out.println("No music for this category");

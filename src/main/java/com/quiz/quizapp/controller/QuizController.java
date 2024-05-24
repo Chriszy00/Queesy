@@ -21,6 +21,7 @@ import javafx.util.Duration;
 
 import java.io.File;
 import java.io.IOException;
+import java.net.URL;
 import java.util.List;
 
 public class QuizController {
@@ -84,8 +85,23 @@ public class QuizController {
     private void loadQuestionsFromFile() {
         ObjectMapper objectMapper = new ObjectMapper();
         try {
-            String fileName = "src/main/resources/json/" + category + ".json";
-            questions = objectMapper.readValue(new File(fileName), new TypeReference<List<Question>>() {});
+            // Update these URLs with your Cloudinary URLs
+            String url = "";
+            switch (category) {
+                case "math":
+                    url = "https://res.cloudinary.com/drhiswbtx/raw/upload/v1716460693/json/math_atkf75.json";
+                    break;
+                case "science":
+                    url = "https://res.cloudinary.com/drhiswbtx/raw/upload/v1716460693/json/science_htvmad.json";
+                    break;
+                case "geography":
+                    url = "https://res.cloudinary.com/drhiswbtx/raw/upload/v1716460692/json/geography_asorve.json";
+                    break;
+                default:
+                    throw new IllegalArgumentException("Invalid category: " + category);
+            }
+
+            questions = objectMapper.readValue(new URL(url), new TypeReference<List<Question>>() {});
         } catch (IOException e) {
             e.printStackTrace();
         }
@@ -149,9 +165,9 @@ public class QuizController {
             // Determine the result music based on the score
             String resultMusicPath;
             if (correct < 7) {
-                resultMusicPath = "src/main/resources/music/result_fail.wav"; // Path to fail music
+                resultMusicPath = "https://res.cloudinary.com/drhiswbtx/video/upload/v1716456867/Music/result_fail_m7se9h.wav"; // Path to fail music
             } else {
-                resultMusicPath = "src/main/resources/music/result_success.wav"; // Path to success music
+                resultMusicPath = "https://res.cloudinary.com/drhiswbtx/video/upload/v1716456867/Music/result_success_xyafgd.wav"; // Path to success music
             }
 
             // Play the selected result music
